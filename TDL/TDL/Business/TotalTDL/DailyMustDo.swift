@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct DialyMustDo: View {
+struct DailyMustDo: View {
     var body: some View {
         NavigationView(content: {
-            DialyList()
+            DailyList()
         })
         .navigationTitle("每日清单")
     }
 }
 
-struct DialyList:View {
+struct DailyList:View {
     
-    var toDoTasks:String[] = []
+    var toDoTasks:[DailyTaskInfoModel] = []
     
     var body: some View {
         List {
@@ -43,7 +43,22 @@ struct DialyList:View {
             }
         }
         .navigationBarBackButtonHidden(false)
-        .navigationTitle("My dialy list")
+        .navigationTitle("My Daily list")
+        .toolbar(content: {
+            ToolbarItem(placement: .topBarTrailing) {
+                NavigationLink {
+                    AddDailyTaskPage()
+                } label: {
+                    Image(systemName: "plus")
+
+//                    Button(action: {
+//
+//                    }, label: {
+//                        Image(systemName: "plus")
+//                    })
+                }
+            }
+        })
         .background(Color.blue)
         .navigationBarTitleDisplayMode(.inline)
         .font(.title)
@@ -56,7 +71,7 @@ struct CheckboxStyle: ToggleStyle {
         HStack {
             Image(systemName: configuration.isOn ? "checkmark.circle" : "circle")
                 .resizable()
-                .frame(width: 20, height: 20)
+                .frame(width: 30, height: 30)
                 .onTapGesture {
                     configuration.isOn.toggle()
                 }
@@ -72,15 +87,21 @@ struct TaskListItem:View {
     @State var isCkeck = false
     
     var body: some View {
-        HStack(content: {
+        HStack(alignment: .top,content: {
             Toggle(isOn: $isCkeck) {
             }
             .toggleStyle(CheckboxStyle())
-            Text(taskTitle)
+            
+            VStack(alignment: .leading, content: {
+                Text(taskTitle)
+                    .font(Font.system(size: 17))
+                Text("detail description")
+                    .font(Font.system(size: 15))
+            })
         })
     }
 }
 
 #Preview {
-    DialyMustDo()
+    DailyMustDo()
 }

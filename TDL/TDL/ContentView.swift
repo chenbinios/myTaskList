@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: .constant(1),
                 content:  {
-            DialyMustDo().tabItem { Text("每日必做") }.tag(1)
+            DailyMustDo().tabItem { Text("每日必做") }.tag(1)
             TotalTDLPage().tabItem { Text("总清单") }.tag(2)
         })
     }

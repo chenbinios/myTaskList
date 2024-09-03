@@ -16,7 +16,9 @@
 		370073EB2C853FDC00695574 /* TDLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370073EA2C853FDC00695574 /* TDLUITests.swift */; };
 		370073ED2C853FDC00695574 /* TDLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370073EC2C853FDC00695574 /* TDLUITestsLaunchTests.swift */; };
 		370073FC2C854BEB00695574 /* TotalTDLPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370073FB2C854BEB00695574 /* TotalTDLPage.swift */; };
-		370073FE2C85B16800695574 /* DialyMustDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370073FD2C85B16700695574 /* DialyMustDo.swift */; };
+		370073FE2C85B16800695574 /* DailyMustDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370073FD2C85B16700695574 /* DailyMustDo.swift */; };
+		37624D332C868F38000510BD /* DailyTaskInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37624D322C868F38000510BD /* DailyTaskInfoModel.swift */; };
+		37624D352C8690F3000510BD /* AddDailyTaskPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37624D342C8690F3000510BD /* AddDailyTaskPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +51,9 @@
 		370073EA2C853FDC00695574 /* TDLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDLUITests.swift; sourceTree = "<group>"; };
 		370073EC2C853FDC00695574 /* TDLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDLUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		370073FB2C854BEB00695574 /* TotalTDLPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTDLPage.swift; sourceTree = "<group>"; };
-		370073FD2C85B16700695574 /* DialyMustDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialyMustDo.swift; sourceTree = "<group>"; };
+		370073FD2C85B16700695574 /* DailyMustDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMustDo.swift; sourceTree = "<group>"; };
+		37624D322C868F38000510BD /* DailyTaskInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskInfoModel.swift; sourceTree = "<group>"; };
+		37624D342C8690F3000510BD /* AddDailyTaskPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDailyTaskPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				370073FB2C854BEB00695574 /* TotalTDLPage.swift */,
-				370073FD2C85B16700695574 /* DialyMustDo.swift */,
+				370073FD2C85B16700695574 /* DailyMustDo.swift */,
+				37624D342C8690F3000510BD /* AddDailyTaskPage.swift */,
+				37624D322C868F38000510BD /* DailyTaskInfoModel.swift */,
 			);
 			path = TotalTDL;
 			sourceTree = "<group>";
@@ -282,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				370073FE2C85B16800695574 /* DialyMustDo.swift in Sources */,
+				37624D332C868F38000510BD /* DailyTaskInfoModel.swift in Sources */,
+				370073FE2C85B16800695574 /* DailyMustDo.swift in Sources */,
+				37624D352C8690F3000510BD /* AddDailyTaskPage.swift in Sources */,
 				370073D02C853FDB00695574 /* ContentView.swift in Sources */,
 				370073D22C853FDB00695574 /* Item.swift in Sources */,
 				370073FC2C854BEB00695574 /* TotalTDLPage.swift in Sources */,
